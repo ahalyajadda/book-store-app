@@ -13,7 +13,9 @@ app.use("/books",router);
 
 //routes
 
-
+app.get("/",(req,res)=>{
+    res.json("server");
+})
 
 
 mongoose.connect(process.env.MONGO_URL)
