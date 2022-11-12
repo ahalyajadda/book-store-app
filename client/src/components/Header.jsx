@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <div>
 
-      <AppBar sx={{backgroundColor:"#232F3D"}} position='sticky'>
+      <AppBar sx={{backgroundColor:"orangered" ,color:"white"}} position='sticky'>
         <Toolbar>
           <NavLink to="/" style={{color:'white'}}> 
           <Typography>

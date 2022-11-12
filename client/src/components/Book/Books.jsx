@@ -16,7 +16,6 @@ const Books=()=>{
     useEffect(()=>{
       fetchhandler().then((data)=>setbooks(data.books));
     },[]);
-    console.log(books);
    return <div>
 
         <ul>
@@ -29,4 +28,3 @@ const Books=()=>{
    </div>
 }
 export default Books;
-

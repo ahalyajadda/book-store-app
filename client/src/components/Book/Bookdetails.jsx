@@ -24,9 +24,7 @@ export default function Bookdetails() {
             name:String(inputs.name),
             author:String(inputs.author),
             description:String(inputs.description),
-            price:Number(inputs.price),
-            image:String(inputs.image),
-            available:Boolean(checked)
+            image:String(inputs.image)
         }).then(res=>res.data)
     }
     const handlesubmit=(e)=>{
@@ -59,13 +57,9 @@ export default function Bookdetails() {
             <TextField value={inputs.author} onChange={handlechange} margin="normal" fullWidth variant="outlined" name="author" />
             <FormLabel>Description</FormLabel>
             <TextField value={inputs.description} onChange={handlechange} margin="normal" fullWidth variant="outlined" name="description" />
-            <FormLabel>Price</FormLabel>
-            <TextField value={inputs.price} onChange={handlechange} margin="normal" type="number" fullWidth variant="outlined" name="price" />
             <FormLabel>Image</FormLabel>
             <TextField value={inputs.image} onChange={handlechange} margin="normal"  fullWidth variant="outlined" name="image" />
-            <FormControlLabel control={<Checkbox checked={checked} onChange={()=>setchecked(!checked)}/>} label="Availble"/> 
             <Button variant="contained" type="submit" >Update Book</Button>
-
             </Box>
 
             </form>

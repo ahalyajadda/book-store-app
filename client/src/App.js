@@ -6,6 +6,7 @@ import Addbook from "./components/Addbook";
 import Books from "./components/Book/Books.jsx";
 import About from "./components/About";
 import Bookdetail from "./components/Book/Bookdetails";
+import Openbook from "./components/Book/Openbook";
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
             <Route path="/books" element={<Books/>} exact/>
             <Route path="/about" element={<About/>} exact/>
             <Route path="/books/:id" element={<Bookdetail/>} exact/>
+            <Route path="/books/book/:filename" element={<Openbook  />} exact/>
           </Routes>
         </main>
 
